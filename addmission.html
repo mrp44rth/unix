@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>addmission Form</title>
+    <link rel="stylesheet" href="/styles/addmission.css" />
+    <link rel="stylesheet" href="./styles/header.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- header and navbar -->
+    <nav>
+        <div id="progress-bar">
+        </div>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Unix</a></div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">Unix</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="#" class="more-items">Courses</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="/yoga.html">Yoga Course</a></li>
+                            <li><a href="/Neilte.html">NIELIT Course</a></li>
+                            <li><a href="/course.html">Diploma Course</a></li>
+                            <li><a href="/bombayart.html">IGD Bombay Art</a></li>
+                            <li><a href="/universityProgram.html">University Program</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="more-items">Branches</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="/login.html">Login</a></li>
+                            <li><a href="/branch.html">Our Branches</a></li>
+                            <li><a href="registration.html">Branch Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="more-items">Student Zone</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="/addmission.html">Admission</a></li>
+                            <li><a href="/exam.html">Exam Alerts</a></li>
+                            <li><a href="/addmissionProccess.html">Admission Process</a></li>
+                        </ul>
+                    </li>
+                    <li style="background-color: rgb(11, 168, 129);"><a href="#verify" style="color: white;">Verify</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Student Addmission</h1>
+    <section id="all-sections">
+        <div class="regitration-container">
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>All <span>*</span> fields are mandatory.</li>
+                    <li>Please fill proper information; otherwise, your form may be rejected.</li>
+                    <li>Photos must be less than 50KB.</li>
+                    <li>Please print your application after final submission.</li>
+                    <li>Send your printed application form to the Registration Office for activation.</li>
+                </ul>
+            </div>
+            <div class="container">
+                <p>Please fill out this form with the required information</p>
+                <form action="https://register-demo.freecodecamp.org" class="registration-form">
+                    <div class="form-group">
+                        <label for="instituteName">Student's Name:</label>
+                        <div class="row">
+                            <input type="text" placeholder="first Name">
+                            <input type="text" placeholder="middle Name">
+                            <input type="text" placeholder="last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <input type="text" placeholder="Father's Name">
+                            <input type="text" placeholder="Mother's Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="date" placeholder="Data of Birth: DD-MM-YYY[*]">
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <label><input type="radio" name="gender" value="Female" required> Female</label>
+                            <label><input type="radio" name="gender" value="Male" required> Male</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label>Category:<span>*</span></label>
+                        <div class="radio-group">
+                            <div class="row">
+                                <label><input type="radio" name="category" value="General" required> General</label>
+                                <label><input type="radio" name="category" value="OBC"> OBC</label>
+                                <label><input type="radio" name="category" value="SC"> SC</label>
+                                <label><input type="radio" name="category" value="ST"> ST</label>
+                                <label><input type="radio" name="category" value="PH"> PH</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="number" required placeholder="Mobile Number[*]">
+                        <input type="number" required placeholder="Guardian Number[*]">
+                    </div>
+                    <div class="row">
+                        <input type="email" required placeholder="Email ID">
+                        <input type="text" required placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <h2>Qualification</h2>
+                        <table class="qualification-table">
+                            <thead>
+                                <tr>
+                                    <th>Examination</th>
+                                    <th>School</th>
+                                    <th>Board</th>
+                                    <th>Year</th>
+                                    <th>Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody class="qualification-section">
+                                <tr class="qualification-row">
+                                    <td><input type="text" name="examination[]" placeholder="Xth"></td>
+                                    <td><input type="text" name="school[]"></td>
+                                    <td><input type="text" name="board[]"></td>
+                                    <td><input type="text" name="year[]"></td>
+                                    <td><input type="text" name="percentage[]"></td>
+                                </tr>
+                                <tr class="qualification-row">
+                                    <td><input type="text" name="examination[]" placeholder="Xi"></td>
+                                    <td><input type="text" name="school[]"></td>
+                                    <td><input type="text" name="board[]"></td>
+                                    <td><input type="text" name="year[]"></td>
+                                    <td><input type="text" name="percentage[]"></td>
+                                </tr>
+                                <tr class="qualification-row">
+                                    <td><input type="text" name="examination[]" placeholder="Xii"></td>
+                                    <td><input type="text" name="school[]"></td>
+                                    <td><input type="text" name="board[]"></td>
+                                    <td><input type="text" name="year[]"></td>
+                                    <td><input type="text" name="percentage[]"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Course Selection section -->
+                    <div class="form-group">
+                        <h2>Course Selection</h2>
+                        <div class="row">
+                            <label for="branch">Select Branch: <span>*</span></label>
+                            <select id="branch" name="branch" required>
+                                <option value="">Select Branch [ * ]</option>
+                                <option value="1">UNIX INSTITUTE JAUNPUR</option>
+                                <option value="3">AMBITION INSTITUTE OF HARDWARE TECHNOLOGY</option>
+                                <option value="6">V.k. Rajput Computer Education Center</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="trade">Select Trade: <span>*</span></label>
+                            <select id="trade" name="trade" required>
+                                <option value="">Select Trade: [ * ]</option>
+                                <option value="1">Diploma Course</option>
+                                <option value="3">PMKVY</option>
+                                <option value="4">University Program </option>
+                                <option value="5">NIELIT Course</option>
+                                <option value="7">NIOS COURSE</option>
+                                <option value="8">Yoga Courses</option>
+                                <option value="9">DRA</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="course">Select Course: <span>*</span></label>
+                            <select id="course" name="course">
+                                <option value="72">Select Your Course</option>
+                                <option value="73">Advance Diploma In Computer Application</option>
+                                <option value="74">Diploma in Computer Applications</option>
+                                <option value="75">Diploma in Financial Applications</option>
+                                <option value="76">Course on Computer Concepts</option>
+                                <option value="77">O Level</option>
+                                <option value="78">A Level</option>
+                                <option value="79">JAVA</option>
+                                <option value="80">PHP</option>
+                                <option value="81">Python</option>
+                                <option value="82">Android Apps Development</option>
+                                <option value="83">HTML</option>
+                                <option value="84">CSS</option>
+                                <option value="85">JavaScript</option>
+                                <option value="86">Complete Web Designing</option>
+                                <option value="87">Data Structure</option>
+                                <option value="88">C, C Plus Plus</option>
+                                <option value="89">AC Fridge Repairing, DRA</option>
+                                <option value="90">Washing Machine Repairing</option>
+                                <option value="91">Computer Hardware Networking</option>
+                                <option value="92">Motor Binding</option>
+                                <option value="93">Mobile Repairing</option>
+                                <option value="94">Domestic Electrician</option>
+                                <option value="96">Diploma in Financial Accounting</option>
+                                <!-- Add more options here if needed -->
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="session">Select Session: <span>*</span></label>
+                            <select id="session" name="session" required>
+                                <option value="">Select Session [ * ]</option>
+                                <option value="session2">Session 2</option>
+                                <option value="3">2018-2017</option>
+                                <option value="4">2018</option>
+                                <option value="5">2019</option>
+                                <option value="6">2020</option>
+                                <option value="7">2021</option>
+                                <option value="8">2022</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo" class="custom-file-label">Choose a photo</label>
+                        <input type="file" id="photo" class="custom-file-input" name="photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="verificationCode">Type the following code:</label>
+                        <input type="number" id="verificationCode" name="verificationCode" required
+                            placeholder="Type: 726837">
+                    </div>
+                    <button class="registration-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-contact">
+            <p>Contact: <a href="tel:9415938887">9415938887</a> | <a
+                    href="mailto:unixjaunpur@gmail.com">unixjaunpur@gmail.com</a></p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-light mx-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-google"></i></a>
+            <a href="#" class="text-light mx-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2014 Unix Institute of Hardware Technology and Management<br>
+            Designed And Developed By: Akash and Parth</a></p>
+    </div>
+
+    <!-- script js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

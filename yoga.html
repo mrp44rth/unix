@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div id="progress-bar">
+        </div>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Unix</a></div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">Unix</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="#" class="more-items">Courses</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="/yoga.html">Yoga Course</a></li>
+                            <li><a href="/Neilte.html">NIELIT Course</a></li>
+                            <li><a href="/course.html">Diploma Course</a></li>
+                            <li><a href="/bombayart.html">IGD Bombay Art</a></li>
+                            <li><a href="/universityProgram.html">University Program</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="more-items">Branches</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="/login.html">Login</a></li>
+                            <li><a href="/branch.html">Our Branches</a></li>
+                            <li><a href="registration.html">Branch Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="more-items">Student Zone</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="/addmission.html">Admission</a></li>
+                            <li><a href="/exam.html">Exam Alerts</a></li>
+                            <li><a href="/addmissionProccess.html">Admission Process</a></li>
+                        </ul>
+                    </li>
+                    <li style="background-color: rgb(11, 168, 129);"><a href="#verify" style="color: white;">Verify</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="all-sections" style="margin-top: 200px;">
+        <h1
+            style="position: absolute;top: 130px; text-align: center; width: 100%; font-size: 40px; color: gray; text-shadow: 2px 2px 2px gray; border-bottom: 1px solid blue;">
+            Yoga Course
+        </h1>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>SN</th>
+                        <th>University/Organization</th>
+                        <th>Trade Name</th>
+                        <th>Eligibility</th>
+                        <th>Duration</th>
+                        <th>Subjects</th>
+                        <th>To Do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contact-us-container" style="margin-top: 50px;">
+            <h2>Student Feedback Form</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="enrollment">Your Enrollment</label>
+                <input type="text" id="enrollment" name="enrollment">
+
+                <label for="course">Select Course</label>
+                <select id="course" name="course">
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <!-- Add more options here -->
+                </select>
+
+                <label for="year">Studied in Year</label>
+                <input type="text" id="year" name="year">
+
+                <label for="infrastructure">Infrastructure Level</label>
+                <input type="number" id="infrastructure" name="infrastructure" min="1" max="5">
+
+                <label for="teacher">Teacher Quality</label>
+                <input type="number" id="teacher" name="teacher" min="1" max="5">
+
+                <label for="environment">Study Environment</label>
+                <input type="number" id="environment" name="environment" min="1" max="5">
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+
+                <label for="verification">Type the code: 229237</label>
+                <input type="text" id="verification" name="verification">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-contact">
+            <p>Contact: <a href="tel:9415938887">9415938887</a> | <a
+                    href="mailto:unixjaunpur@gmail.com">unixjaunpur@gmail.com</a></p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-light mx-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-google"></i></a>
+            <a href="#" class="text-light mx-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2014 Unix Institute of Hardware Technology and Management<br>
+            Designed And Developed By: Akash and Parth</a></p>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
