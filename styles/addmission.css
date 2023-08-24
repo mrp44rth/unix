@@ -1,0 +1,292 @@
+body {
+    min-height: 100vh;
+}
+
+.regitration-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    padding: 100px;
+    gap: 20px;
+}
+
+.container {
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #c6cde3, -10px -10px 20px #ffffff;
+    padding: 40px;
+    max-width: 800px;
+    width: 900px;
+    margin-top: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    text-align: center;
+    color: gray;
+    text-shadow: 2px 2px 5px gray;
+    font-size: 40px;
+    border-bottom: 1px solid blue;
+}
+
+@media screen and (max-width:1100px) {
+    h1 {
+        width: 100%;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    color: #303f9f;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration-form {
+    display: grid;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #303f9f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    /* border-radius: 10px; */
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 10px #c6cde3, inset -6px -6px 10px #ffffff;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    gap: 8px;
+}
+
+.row input[type="number"],
+input[type="email"],
+#directorName,
+#directorPhone,
+#instituteWebsite,
+input[type="date"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    /* border-radius: 10px; */
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 10px #c6cde3, inset -6px -6px 10px #ffffff;
+    width: 330px;
+    transition: all 0.3s ease;
+}
+
+fieldset {
+    width: 50%;
+    border: 2px solid rgb(12, 170, 117);
+}
+
+fieldset legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 5px #c6cde3, inset -4px -4px 5px #ffffff;
+}
+
+.choose-photo input[type="file"] {
+    border: 1px solid #aaa;
+    background: #e0e5ec;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.registration-btn {
+    background: #303f9f;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.registration-btn:hover {
+    background: #4757c9;
+}
+
+@media screen and (max-width: 852px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    input[type="date"] {
+        width: 100%;
+    }
+
+    .row input[type="number"],
+    input[type="email"],
+    #directorName,
+    #directorPhone,
+    #instituteWebsite {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-top: 10px;
+    }
+
+    .registration-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* intructions */
+.instructions {
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #c6cde3, -10px -10px 20px #ffffff;
+    padding: 20px;
+    margin-top: 100px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.instructions:hover {
+    transform: translateY(-5px);
+}
+
+.instructions h2 {
+    font-size: 24px;
+    color: #303f9f;
+    margin-bottom: 15px;
+}
+
+.instructions ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.instructions span {
+    color: #ff0000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .instructions {
+        padding: 15px;
+    }
+
+    .instructions h2 {
+        font-size: 20px;
+    }
+
+    .instructions ul {
+        font-size: 14px;
+    }
+}
+
+.form-group h2 {
+    font-size: 24px;
+    color: #303f9f;
+    margin-bottom: 15px;
+}
+
+.form-group .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #303f9f;
+    flex-basis: 40%;
+}
+
+.form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 10px #c6cde3, inset -6px -6px 10px #ffffff;
+    width: 60%;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 5px #c6cde3, inset -4px -4px 5px #ffffff;
+}
+
+@media screen and (max-width: 852px) {
+    .form-group .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group select {
+        width: 100%;
+    }
+}
+
+tr td {
+    background-color: red;
+    word-wrap: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+tr td input {
+    border-radius: 0;
+    width: 100%;
+}

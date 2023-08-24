@@ -1,0 +1,98 @@
+/* Reset some default styling */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the table container */
+.table-container {
+  margin: 200px auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 960px) {
+  .table-container {
+    width: 85%;
+    overflow-x: scroll;
+  }
+}
+
+/* Style the table */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: scroll;
+}
+
+/* Style the table headers */
+.course-table th {
+  background-color: #204f60;
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #ccc;
+  color: white;
+}
+
+/* Style the table cells */
+.course-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.course-table tr:nth-child(even) {
+  background-color: rgb(230, 230, 230);
+}
+
+.course-table td:hover {
+  background-color: rgb(168, 163, 163);
+}
+
+/* Style the "Join" buttons */
+.course-table button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add spacing to the button inside the cell */
+.course-table td button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.course-table td button a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Make the table responsive */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+
+  .course-table {
+    font-size: 14px;
+  }
+}
